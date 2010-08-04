@@ -17,7 +17,7 @@ h1.logo a { display:block; padding-top:85px; }
 #searchForm { float:right; margin-top:-80px; }
 
 /* Top menu and its links */
-#topMenu { color:#dedede; }
+#topMenu { color:#dedede; list-style:none; }
 #topMenu a { text-decoration:none; color:#777; }
 #topMenu a:hover { text-decoration:underline; }
 
@@ -30,7 +30,7 @@ h1.logo a { display:block; padding-top:85px; }
 #mainContent { margin:20px auto 0 auto; }
 #mainContent h2 { background:#eee; margin:0 0 10px 0; font-size:12pt; }
 #noticiasInstitucionais {
-    width:420px; padding-right:40px;
+    width:420px; padding-right:20px;
     margin-right:10px; float:left; }
 #noticiasInstitucionais ul { list-style:none; }
 #noticiasInstitucionais li {
@@ -38,6 +38,15 @@ h1.logo a { display:block; padding-top:85px; }
     border-bottom:dotted 1px #ccc; }
 #noticiasInstitucionais p { margin-top:4px; }
 
-#noticiasDaRede { background:#f7f7f7; padding:10px; float:left; width:280px; }
+#noticiasDaRede { background:#f7f7f7; padding:10px; float:left; width:280px;
+                  margin-right:20px; }
 #noticiasDaRede li { height:90px; margin-bottom:20px; list-style:none; }
 #noticiasDaRede img { display:block; float:left; margin-right:10px; }
+
+/* Sidebar and its widgets */
+#sidebar h3 { font-size:10pt; }
+#sidebar ul { list-style:none; }
+
+/* Footer */
+#footer { border-top:solid 1px #fc0; clear:both; }
+#footer ul { list-style:none; }
