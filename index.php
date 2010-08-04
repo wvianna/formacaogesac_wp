@@ -14,58 +14,7 @@
 
       <div id="noticiasInstitucionais">
         <h2>Notícias do Projeto</h2>
-        <ul>
-          <li>
-            <strong>Suspendisse ac mattis felis.</strong>
-            <em>04/08/10</em>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Pellentesque ullamcorper dictum nisl, at tempus sem
-              vestibulum at. Sed cursus tincidunt adipiscing.
-            </p>
-          </li>
-          <li>
-            <strong>Quisque ac ipsum leo, ac faucibus eros</strong>
-            <em>04/08/10</em>
-            <p>
-              Pellentesque volutpat lorem in libero aliquet ut dignissim
-              lacus faucibus. Vestibulum pretium aliquet arcu, et
-              lobortis massa varius in. Ut porta mollis lorem et
-              scelerisque.
-            </p>
-          </li>
-          <li>
-            <strong>Fusce non ipsum at lorem laoreet pulvinar</strong>
-            <em>03/08/10</em>
-            <p>
-              Integer vitae quam ac magna venenatis faucibus ut vel
-              elit. Cras facilisis lorem vitae purus feugiat non
-              molestie mauris auctor. Vivamus dolor quam, luctus at
-              consectetur pharetra, venenatis non dolor.
-            </p>
-          </li>
-          <li>
-            <strong>Aenean sed neque nunc</strong>
-            <em>03/08/10</em>
-            <p>
-              Vestibulum ante ipsum primis in faucibus orci luctus et
-              ultrices posuere cubilia Curae; Mauris gravida semper enim
-              vitae egestas. Donec nulla est, fermentum at rhoncus eu,
-              laoreet id elit. Aliquam malesuada urna et enim dictum
-              pulvinar. Nam vitae volutpat dolor.
-            </p>
-          </li>
-          <li>
-            <strong>Ut eget iaculis risus</strong>
-            <em>03/08/10</em>
-            <p>
-              Integer blandit metus id velit tempor tincidunt. Aenean
-              nec augue mauris. Sed et urna nunc. Duis facilisis, enim
-              vitae pharetra gravida, urna neque posuere metus, sed
-              volutpat quam felis vitae odio.
-            </p>
-          </li>
-        </ul>
+        <?php get_template_part( 'loop', 'index' ); ?>
       </div>
 
       <div id="noticiasDaRede">
