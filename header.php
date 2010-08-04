@@ -2,12 +2,15 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Projeto de Formação Gesac</title>
-    <link rel="stylesheet" href="style.css" />
+    <title><?php bloginfo('title')?></title>
+    <link rel="stylesheet" type="text/css" media="all"
+          href="<?php bloginfo('stylesheet_url'); ?>" />
   </head>
   <body>
     <div id="header" class="portalWidth">
-      <h1 class="logo"><a href="#">Projeto de Formação Gesac</a></h1>
+      <h1 class="logo">
+        <a href="<?php bloginfo('url')?>"><?php bloginfo('title')?></a>
+      </h1>
 
       <ul id="topMenu">
         <li><a href="#">Apresentação</a></li>
