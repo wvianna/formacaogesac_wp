@@ -16,7 +16,7 @@ a { text-decoration:none; color:#000; }
 .displayNone { display:none; }
 
 /* Logo */
-h1.logo { background:url(logo.png) no-repeat; overflow:hidden; width:205px;
+h1.logo { background:url(imgs/logo.png) no-repeat; overflow:hidden; width:205px;
           height:85px; float:left; border-right: solid 1px #ccc;
           margin-right:40px; padding-right:30px; }
 h1.logo a { display:block; padding-top:85px; }

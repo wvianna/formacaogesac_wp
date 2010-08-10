@@ -22,7 +22,7 @@
         <h2>O que acontece na rede</h2>
         <ul>
           <li>
-            <img src="avatar.png" alt="Avatar" />
+            <img src="<?php bloginfo('template_url');?>/imgs/avatar.png" alt="Avatar" />
             <strong>Lincoln de Sousa</strong>
             <em>04/08/2010</em>
             <p>
@@ -33,7 +33,7 @@
           </li>
 
           <li>
-            <img src="avatar.png" alt="Avatar" />
+            <img src="<?php bloginfo('template_url');?>/imgs/avatar.png" alt="Avatar" />
             <strong>Bleh</strong>
             <em>04/08/2010</em>
             <p>
