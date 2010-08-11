@@ -8,12 +8,70 @@ Version: 1.0
 
 /* Global stuff */
 * { margin:0; padding:0; }
-body { font-size:10pt; font-family:sans-serif; }
+body { 
+ font-size:10pt; 
+ font-family:sans-serif; 
+ background-image:url("imgs/fundo.gif");
+}
+#divHeaderBrasil {
+float:left;
+margin:0 0 2em;
+padding:0;
+width:100%;
+}
+#divHeaderBrasil ul {
+background:url("imgs/bgDivHeaderBrasil.gif") repeat-x scroll 0 0 transparent;
+border-bottom:4px solid #93AB93;
+float:left;
+margin:0;
+padding:0;
+width:100%;
+}
+#divHeaderBrasil ul li.logo {
+background:url("imgs/imgDivHeaderBrasil.jpg") no-repeat scroll 0 0 transparent;
+display:inline;
+float:left;
+height:35px;
+margin:0;
+padding:0;
+width:700px;
+}
+#divHeaderBrasil ul li.brasil {
+background:url("imgs/imgBrasilPais.gif") no-repeat scroll 0 0 transparent;
+display:inline;
+float:right;
+height:35px;
+margin:0;
+padding:0;
+width:120px;
+}
+
+#divHeaderBrasil ul li img.comunicacoes {
+float:left;
+padding:0 0 0 44px;
+}
+#divHeaderBrasil ul li img {
+margin:0;
+padding:0;
+vertical-align:middle;
+}
+
+#visual-portal-wrapper {
+margin:0 auto;
+width:994px;
+background:none repeat scroll 0 0 white;
+}
+
 a { text-decoration:none; color:#000; }
 
 /* General classes */
-.portalWidth { width:960px; margin:30px auto 20px auto; }
+.portalWidth { }
 .displayNone { display:none; }
+
+#header{
+padding:2em;
+
+}
 
 /* Logo */
 h1.logo { background:url(imgs/logo.png) no-repeat; overflow:hidden; width:205px;
@@ -38,15 +96,22 @@ h1.logo a { display:block; padding-top:85px; }
 #mainContent { margin:20px auto 0 auto; }
 #mainContent h2 { background:#eee; margin:0 0 10px 0; font-size:12pt; }
 #noticiasInstitucionais {
-    width:420px; padding-right:20px;
-    margin-right:10px; float:left; }
+    width:420px; 
+    padding-left:2em;
+    padding-right:2em;
+    margin-right:10px; 
+    float:left; 
+
+}
 #noticiasInstitucionais ul { list-style:none; }
 #noticiasInstitucionais li {
     margin:0 0 20px 0; float:left; padding-bottom:10px;
     border-bottom:dotted 1px #ccc; }
 #noticiasInstitucionais p { margin-top:4px; }
 
-#noticiasDaRede { background:#f7f7f7; padding:10px; float:left; width:280px;
+#noticiasDaRede { background:#f7f7f7; 
+                  padding:10px; 
+                  float:left; width:280px;
                   margin-right:20px; }
 #noticiasDaRede li { height:90px; margin-bottom:20px; list-style:none; }
 #noticiasDaRede img { display:block; float:left; margin-right:10px; }
@@ -56,5 +121,69 @@ h1.logo a { display:block; padding-top:85px; }
 #sidebar ul { list-style:none; }
 
 /* Footer */
-#footer { border-top:solid 1px #fc0; clear:both; }
 #footer ul { list-style:none; }
+
+#footer, #footer a {
+color:#FFFFFF;
+font-size:11.5px;
+text-decoration:none;
+}
+#footer {
+background:url("imgs/bg_footer.png") repeat-x scroll left top transparent;
+border-bottom:3px solid #F1F1F1;
+clear:both;
+height:27px;
+margin-top:30px;
+overflow:hidden;
+padding-top:5px;
+}
+
+#footer .links{
+ float: right;
+ margin-right:5px;
+}
+
+
+#footer .menu{
+ float: left;
+}
+#footer ul.menu li:first-child {
+border:medium none;
+}
+#footer ul.menu li {
+border-left:1px solid #FFFFFF;
+display:inline;
+float:left;
+margin-right:8px;
+margin-top:3px;
+padding-left:8px;
+}
+#footer ul.menu a:hover {
+text-decoration:underline;
+}
+
+
+#footer p.text a {
+text-decoration:underline;
+}
+
+#footer p.text {
+left:50%;
+margin-left:-157.5px;
+position:absolute;
+right:50%;
+top:3px;
+width:335px;
+}
+
+#footer .middle {
+position:relative;
+}
+
+#footer p.links a img {
+border:medium none;
+}
+
+.clear {
+clear:both;
+}

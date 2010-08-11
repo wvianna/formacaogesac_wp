@@ -7,7 +7,19 @@
           href="<?php bloginfo('stylesheet_url'); ?>" />
   </head>
   <body>
-    <div id="header" class="portalWidth">
+    <div id="visual-portal-wrapper">
+    <div id="divHeaderBrasil">
+        <ul>
+         <li class="logo">
+            <img src="<?php bloginfo('template_url');?>/imgs/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes">
+         </li>
+         <li class="brasil">
+            <!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> -->
+
+        </li>
+       </ul>
+     </div>
+    <div id="header">
       <h1 class="logo">
         <a href="<?php bloginfo('url')?>"><?php bloginfo('title')?></a>
       </h1>
