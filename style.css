@@ -10,7 +10,7 @@ Version: 1.0
 * { margin:0; padding:0; }
 body { 
  font-size:10pt; 
- font-family:sans-serif; 
+ font-family: verdana; 
  background-image:url("imgs/fundo.gif");
 }
 #divHeaderBrasil {
@@ -84,8 +84,8 @@ h1.logo a { display:block; padding-top:85px; }
 
 /* Top menu and its links */
 #topMenu { color:#dedede; list-style:none; }
-#topMenu a { text-decoration:none; color:#777; }
-#topMenu a:hover { text-decoration:underline; }
+#topMenu a { text-decoration:none; color:#4879C3; }
+#topMenu a:hover { font-weight:bold; }
 
 /* The middle-page bar */
 #buttonBar { background:#ddd; height:40px; }
@@ -125,7 +125,7 @@ h1.logo a { display:block; padding-top:85px; }
 
 #footer, #footer a {
 color:#FFFFFF;
-font-size:11.5px;
+font-size:10.9px;
 text-decoration:none;
 }
 #footer {
@@ -198,7 +198,7 @@ clear:both;
 }
 
 #acessibilidade span {
-    color: #000;
+    color: #4879C3;
 }
 
 #acessibilidade span img {
