@@ -194,17 +194,16 @@ clear:both;
 		
 #acessibilidade {
     float: right;
-    line-height: 1.5em;
 }
 
 #acessibilidade span {
     color: #000;
+    font-size: 10px;
 }
 
 #acessibilidade span img {
     border: none;
     vertical-align: middle;
-    font-size: 13px;
 }
 
 #acessibilidade li {
