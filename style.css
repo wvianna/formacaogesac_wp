@@ -62,7 +62,7 @@ width:994px;
 background:none repeat scroll 0 0 white;
 }
 
-a { text-decoration:none; color:#000; }
+a { text-decoration:none; color:#4879C3; }
 
 /* General classes */
 .portalWidth { }
@@ -194,17 +194,20 @@ clear:both;
 		
 #acessibilidade {
     float: right;
-    line-height: 1.5em;
 }
 
 #acessibilidade span {
+<<<<<<< HEAD
     color: #4879C3;
+=======
+    color: #000;
+    font-size: 10px;
+>>>>>>> 8e63262439987e0cc2fff22f8b9bb023c50db576
 }
 
 #acessibilidade span img {
     border: none;
     vertical-align: middle;
-    font-size: 13px;
 }
 
 #acessibilidade li {
