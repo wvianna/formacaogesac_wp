@@ -97,5 +97,6 @@
     <form id="searchForm" action="#" method="post">
       <input type="text" name="q" />
       <input type="button" value="buscar" />
+      <a id="fale_conosco" href="#"><img src="<?php bloginfo('template_url');?>/imgs/fale_conosco.png" /></a>
     </form>
   </div>

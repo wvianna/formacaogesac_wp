@@ -215,3 +215,9 @@ clear:both;
 #acessibilidade li a:link {
     text-decoration: none;
 }
+
+#fale_conosco img {
+	border: none;
+	margin-bottom: -8px;
+	margin-left: 15px;
+}
