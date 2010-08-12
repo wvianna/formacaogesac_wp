@@ -64,6 +64,25 @@
       </ul>
     </div>
   <div id="header">
+  
+    <ul id="acessibilidade">
+			<li>
+				<a href="#">
+					<span><img src="<?php bloginfo('template_url');?>/imgs/a.gif"/>Fonte normal</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				  <span><img src="<?php bloginfo('template_url');?>/imgs/a_menos.gif"/>Diminuir fonte</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				  <span><img src="<?php bloginfo('template_url');?>/imgs/a_mais.gif">Aumentar fonte</span>
+				</a>
+			</li>
+		</ul>
+  
     <h1 class="logo">
       <a href="<?php bloginfo('url')?>"><?php bloginfo('title')?></a>
     </h1>

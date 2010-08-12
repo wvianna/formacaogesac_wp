@@ -187,3 +187,31 @@ border:medium none;
 .clear {
 clear:both;
 }
+
+#searchForm {
+	margin-top: -45px;
+}
+		
+#acessibilidade {
+    float: right;
+    line-height: 1.5em;
+}
+
+#acessibilidade span {
+    color: #000;
+}
+
+#acessibilidade span img {
+    border: none;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+#acessibilidade li {
+    display: inline;
+    margin-left: 15px;
+}
+
+#acessibilidade li a:link {
+    text-decoration: none;
+}
