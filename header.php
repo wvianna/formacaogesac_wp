@@ -64,7 +64,7 @@
       </ul>
     </div>
   <div id="header">
-  
+
     <ul id="acessibilidade">
 			<li>
 				<a href="#">
@@ -82,17 +82,11 @@
 				</a>
 			</li>
 		</ul>
-  
+
     <h1 class="logo">
       <a href="<?php bloginfo('url')?>"><?php bloginfo('title')?></a>
     </h1>
-    <ul id="topMenu">
-      <li><a href="#">Apresentação</a></li>
-      <li><a href="#">Link 2</a></li>
-      <li><a href="#">Link 3 dolor sit amet</a></li>
-      <li><a href="#">Link 4 lorem ipsum</a></li>
-      <li><a href="#">Calendário formação</a></li>
-    </ul>
+
 
     <form id="searchForm" action="#" method="post">
       <input type="text" name="q" />
@@ -100,3 +94,12 @@
       <a id="fale_conosco" href="#"><img src="<?php bloginfo('template_url');?>/imgs/fale_conosco.png" /></a>
     </form>
   </div>
+
+    <div id="navigation">
+      <ul>
+        <?php wp_page_menu (array('show_home' => true)); ?>
+        <!--><li><a href="<?php echo get_option('home')?>">Inicial</a></li>
+        <?php  wp_list_pages('title_li='); ?>-->
+      </ul>
+    </div>
+

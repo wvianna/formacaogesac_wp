@@ -1,16 +1,16 @@
 /*
 Theme Name: Institucional Formação Gesac
 Theme URI: http://www.formacaogesac.mc.gov.br/
-Description: Tema para o blog institucional do projeto formação gesac.
-Author: Lincoln e equipe NSI IFF
+Description: Tema para o blog institucional do projeto formação Gesac.
+Author: Equipe NSI - IFF
 Version: 1.0
 */
 
 /* Global stuff */
 * { margin:0; padding:0; }
-body { 
- font-size:10pt; 
- font-family: verdana; 
+body {
+ font-size:10pt;
+ font-family: verdana;
  background-image:url("imgs/fundo.gif");
 }
 #divHeaderBrasil {
@@ -96,11 +96,11 @@ h1.logo a { display:block; padding-top:85px; }
 #mainContent { margin:20px auto 0 auto; }
 #mainContent h2 { background:#eee; margin:0 0 10px 0; font-size:12pt; }
 #noticiasInstitucionais {
-    width:420px; 
+    width:420px;
     padding-left:2em;
     padding-right:2em;
-    margin-right:10px; 
-    float:left; 
+    margin-right:10px;
+    float:left;
 
 }
 #noticiasInstitucionais ul { list-style:none; }
@@ -109,8 +109,8 @@ h1.logo a { display:block; padding-top:85px; }
     border-bottom:dotted 1px #ccc; }
 #noticiasInstitucionais p { margin-top:4px; }
 
-#noticiasDaRede { background:#f7f7f7; 
-                  padding:10px; 
+#noticiasDaRede { background:#f7f7f7;
+                  padding:10px;
                   float:left; width:280px;
                   margin-right:20px; }
 #noticiasDaRede li { height:90px; margin-bottom:20px; list-style:none; }
@@ -191,7 +191,7 @@ clear:both;
 #searchForm {
 	margin-top: -45px;
 }
-		
+
 #acessibilidade {
     float: right;
 }
@@ -224,3 +224,4 @@ clear:both;
 	margin-bottom: -8px;
 	margin-left: 15px;
 }
+
