@@ -107,6 +107,12 @@ margin:10px;
 #mainContent { margin:20px auto 0 auto; min-height:500px;}
 #mainContent h2 { background:#eee; margin:0 0 10px 0; font-size:12pt; }
 
+#pageContent{
+  margin-left:2em;
+  width:780px;
+  float: left;
+}
+
 
 #left-column{
   float:left;
