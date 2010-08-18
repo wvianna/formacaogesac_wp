@@ -113,8 +113,12 @@ margin:10px;
   float: left;
 }
 
+#left-column {
+	float: left;
+	width: 100px;
+}
 
-#left-column{
+#left-column-top{
   float:left;
   height: 100px;
   width: 100px;
@@ -122,11 +126,24 @@ margin:10px;
   margin-left:2em;
 }
 
-#center-column{
+#left-column-bottom{
+  float: left;
+}
+
+#center-column {
+	float: left;
+	width: 100px;
+}
+
+#center-column-top{
   float:left;
   height: 100px;
   width: 100px;
   border: 1px solid;
+}
+
+#center-column-bottom{
+  float: left;
 }
 
 #right-column{
