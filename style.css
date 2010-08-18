@@ -115,31 +115,26 @@ margin:10px;
 
 #left-column {
 	float: left;
-	width: 100px;
+  padding-right:2em;
+  padding-left:2em;
 }
 
 #left-column-top{
-  float:left;
-  height: 100px;
-  width: 100px;
-  border: 1px solid;
-  margin-left:2em;
+
 }
 
 #left-column-bottom{
-  float: left;
+
 }
 
 #center-column {
 	float: left;
-	width: 100px;
+  padding-right:2em;
+  padding-left:2em;
 }
 
 #center-column-top{
-  float:left;
-  height: 100px;
-  width: 100px;
-  border: 1px solid;
+
 }
 
 #center-column-bottom{
