@@ -70,22 +70,33 @@ a { text-decoration:none; color:#4879C3; }
 
 #header{
 padding:2em;
-
+height:115px;
 }
 
 /* Logo */
 h1.logo { background:url(imgs/logo.png) no-repeat; overflow:hidden; width:205px;
-          height:85px; float:left; border-right: solid 1px #ccc;
-          margin-right:40px; padding-right:30px; }
+          height:85px; float:left; margin-right:40px; padding-right:30px; }
 h1.logo a { display:block; padding-top:85px; }
 
 /* Search form and all search related styles */
 #searchForm { float:right; margin-top:-80px; }
 
 /* Top menu and its links */
-#topMenu { color:#dedede; list-style:none; }
-#topMenu a { text-decoration:none; color:#4879C3; }
-#topMenu a:hover { font-weight:bold; }
+
+#navigation{
+background: none repeat scroll 0 0 #EEEEEE;
+height: 40px;
+}
+#navigation a { text-decoration:none; color:#4879C3; }
+#navigation a:hover { font-weight:bold; }
+
+#navigation ul li {
+float:left;
+list-style-type:none;
+margin:10px;
+}
+
+
 
 /* The middle-page bar */
 #buttonBar { background:#ddd; height:40px; }
@@ -93,8 +104,31 @@ h1.logo a { display:block; padding-top:85px; }
                 margin-right:20px; }
 
 /* The main content and its columns */
-#mainContent { margin:20px auto 0 auto; }
+#mainContent { margin:20px auto 0 auto; min-height:500px;}
 #mainContent h2 { background:#eee; margin:0 0 10px 0; font-size:12pt; }
+
+
+#left-column{
+  float:left;
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  margin-left:2em;
+}
+
+#center-column{
+  float:left;
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+}
+
+#right-column{
+  float:right;
+  margin-right:2em;
+}
+
+
 #noticiasInstitucionais {
     width:420px;
     padding-left:2em;
@@ -189,20 +223,17 @@ clear:both;
 }
 
 #searchForm {
-	margin-top: -45px;
+	margin-top: 16px;
 }
 
 #acessibilidade {
     float: right;
+    margin-top:-20px;
 }
 
 #acessibilidade span {
-<<<<<<< HEAD
     color: #4879C3;
-=======
-    color: #000;
     font-size: 10px;
->>>>>>> 8e63262439987e0cc2fff22f8b9bb023c50db576
 }
 
 #acessibilidade span img {

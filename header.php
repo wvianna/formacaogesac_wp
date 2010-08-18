@@ -96,10 +96,8 @@
   </div>
 
     <div id="navigation">
-      <ul>
         <?php wp_page_menu (array('show_home' => true)); ?>
         <!--><li><a href="<?php echo get_option('home')?>">Inicial</a></li>
         <?php  wp_list_pages('title_li='); ?>-->
-      </ul>
-    </div>
+   </div>
 
