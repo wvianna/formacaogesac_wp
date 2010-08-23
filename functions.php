@@ -3,6 +3,7 @@
   // includes
   include_once(TEMPLATEPATH . '/global/inc/the_thumb.php');
   include_once(TEMPLATEPATH . '/global/inc/widget_destaque.php');
+  include_once(TEMPLATEPATH . '/global/inc/widget_mundo_digital.php');
 
   if ( function_exists('register_sidebar') )
     register_sidebar(array('name' => "left-column-top"));
