@@ -19,12 +19,13 @@ class widget_mundo_digital extends WP_Widget
 	{
 		extract($args);
 		$title = apply_filters('widget_title', empty($instance['title']) ? 'Mundo Digital' : $instance['title']);
-		$maxPages = empty($instance['maxPages']) ? 5 : $instance['maxPages'];                
-		echo $before_widget;
+		$maxPages = empty($instance['maxPages']) ? 5 : $instance['maxPages'];    
+                $category_name = empty($instance['category_name']) ? 'category_name' : $instance['category_name'];
+                echo $before_widget;
 		echo $before_title . $title . $after_title;
                 ?>
                 <div id="mundo_digital">
-  			<?php $recent = new WP_Query("cat=3&showposts=5"); 
+  			<?php $recent = new WP_Query("category_name=$category_name&showposts=5"); 
     				while($recent->have_posts()) : $recent->the_post();?>
                                         <ul> <?php the_title(); ?> </ul>
   			<?php endwhile; ?> 
@@ -46,6 +47,7 @@ class widget_mundo_digital extends WP_Widget
 	{
 	    	$title = esc_attr( $instance['title'] );
 	    	$maxPages = esc_attr( $instance['maxPages'] );
+		$category_name = esc_attr($instance['category_name']);
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>">Título:</label>
@@ -57,11 +59,11 @@ class widget_mundo_digital extends WP_Widget
                         />
 		</p>
                 <p>
-			<label for="<?php echo $this->get_field_id('cat'); ?>">Categoria:</label>
+			<label for="<?php echo $this->get_field_id('category_name'); ?>">Categoria:</label>
 			<input type="text" 
-                               id="<?php echo $this->get_field_id('cat'); ?>" 
-                               name="<?php echo $this->get_field_name('cat'); ?>" 
-                               maxlength="26" value="<?php echo $cat; ?>" 
+                               id="<?php echo $this->get_field_id('category_name'); ?>" 
+                               name="<?php echo $this->get_field_name('category_name'); ?>" 
+                               maxlength="26" value="<?php echo $category_name; ?>" 
                                class="widefat" 
                         />
 		</p>
