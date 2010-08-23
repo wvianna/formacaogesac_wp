@@ -25,7 +25,7 @@ class widget_mundo_digital extends WP_Widget
 		echo $before_title . $title . $after_title;
                 ?>
                 <div id="mundo_digital">
-  			<?php $recent = new WP_Query("category_name=$category_name&showposts=5"); 
+  			<?php $recent = new WP_Query("category_name=$category_name&showposts=$maxPages"); 
     				while($recent->have_posts()) : $recent->the_post();?>
                                         <ul> <?php the_title(); ?> </ul>
   			<?php endwhile; ?> 
