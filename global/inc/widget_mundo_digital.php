@@ -25,7 +25,7 @@ class widget_mundo_digital extends WP_Widget
 		echo $before_title . $title . $after_title;
                 ?>
                 <div id="mundo_digital">
-  			<?php $recent = new WP_Query("category_name=$category_name&showposts=$maxPages"); 
+  			<?php $recent = new WP_Query("cat=$category_name&showposts=$maxPages"); 
     				while($recent->have_posts()) : $recent->the_post();?>
                                         <ul> <?php the_title(); ?> </ul>
   			<?php endwhile; ?> 
@@ -48,7 +48,8 @@ class widget_mundo_digital extends WP_Widget
 	    	$title = esc_attr( $instance['title'] );
 	    	$maxPages = esc_attr( $instance['maxPages'] );
 		$category_name = esc_attr($instance['category_name']);
-		?>
+                $categories = get_categories();
+                ?>
 		<p>
 			<label for="<?php echo $this->get_field_id('title'); ?>">Título:</label>
 			<input type="text" 
@@ -60,22 +61,21 @@ class widget_mundo_digital extends WP_Widget
 		</p>
                 <p>
 			<label for="<?php echo $this->get_field_id('category_name'); ?>">Categoria:</label>
-			<input type="text" 
-                               id="<?php echo $this->get_field_id('category_name'); ?>" 
-                               name="<?php echo $this->get_field_name('category_name'); ?>" 
-                               maxlength="26" value="<?php echo $category_name; ?>" 
-                               class="widefat" 
-                        />
+                        <select id="<?php echo $this->get_field_id('category_name'); ?>" 
+                                name="<?php echo $this->get_field_name('category_name'); ?>">                                
+                                <?php foreach ($categories as $cat) { ?>
+				<option <?php if($category_name == $cat->term_id) echo 'selected="selected"'; ?> value="<?php echo $cat->term_id; ?>"><?php echo $cat->name; ?></option>
+				<?php }?>			                               
+                        </select>
 		</p>
             	<p>
 			<label for="<?php echo $this->get_field_id('maxPages'); ?>">Número máximo de posts:</label>
 			<select id="<?php echo $this->get_field_id('maxPages'); ?>" 
                                 name="<?php echo $this->get_field_name('maxPages'); ?>">
-				<?php for($i=0; $i <= 10; $i++) : ?>
-				<option <?php if($maxPages == $i) echo 'selected="selected"'; ?> 
-                                        value="<?php if($i == 0) echo '1'; else echo $i; ?>">
-                                        <?php if($i == 0) echo '1'; else echo $i; ?>
-				</option>
+				<?php for($i=1; $i <= 10; $i++) : ?>
+				    <option <?php if($maxPages == $i) echo 'selected="selected"'; ?> value="<?php if($i == 1) echo $i; else echo $i;?>">
+                                        <?php if($i == 1) echo '1'; else echo $i; ?>          
+				    </option>
 	                	<?php endfor; ?>
 			</select>
             	</p>
