@@ -28,7 +28,8 @@ class widget_mundo_digital extends WP_Widget
   			<?php $recent = new WP_Query("cat=$category_name&showposts=$maxPages"); 
     				while($recent->have_posts()) : $recent->the_post();?>
                                         <ul> <?php the_title(); ?> </ul>
-                                        <ul> <?php the_excerpt(); ?> </ul>
+                                        <ul> <?php the_content("Continue lendo esta postagem..."); ?> </ul>
+                                        <br>                                        
   			<?php endwhile; ?> 
 		</div>
                 <?php
