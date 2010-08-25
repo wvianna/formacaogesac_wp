@@ -137,14 +137,7 @@
     <li id="right_orkut"><a href="#">Orkut</a></li>
     <li id="right_youtube"><a href="#">Youtube</a></li>
 	</ul>
-	<ul class="logos">
-	<li><a href="http://www.cnpq.br/">[cnpq]</a></li>
-	<li><a href="http://www.gesac.gov.br/">[programa gesac]</a></li>
-	<li><a href="#">[cnpq]</a></li>
-	<li><a href="http://www.mec.gov.br/">[mec]</a></li>
-	<li><a href="http://www.mc.gov.br/">[mc]</a></li>
-	</ul>
-      <?php get_sidebar(); ?>
+	      <?php get_sidebar(); ?>
     </div>
     <div class="clear"></div>
   </div>

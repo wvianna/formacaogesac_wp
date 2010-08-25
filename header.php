@@ -50,7 +50,6 @@
 	 */
 	wp_head();
 ?>
-<link rel="stylesheet" type="text/css" src="<?php bloginfo('template_url');?>/grid.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 <body>
