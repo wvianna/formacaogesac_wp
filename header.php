@@ -8,7 +8,6 @@
  * @subpackage Twenty_Ten
  * @since Twenty Ten 1.0
  */
- 
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -35,6 +34,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -50,39 +50,54 @@
 	 */
 	wp_head();
 ?>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 <body>
-	<div id="headerbr">
-		<div class="mclogo"><img src="<?php bloginfo('template_url');?>/imgs/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes" /></div>
-		<div class="brasillogo"><!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> --></div>
+  <div id="visual-portal-wrapper">
+    <div id="divHeaderBrasil">
+      <ul>
+        <li class="logo">
+          <img src="<?php bloginfo('template_url');?>/imgs/comunicacoes_logo.png" alt="Comunicações - Ministério das Comunicações" title="Comunicações - Ministério das Comunicações" class="comunicacoes">
+        </li>
+        <li class="brasil">
+          <!-- <img src="++resource++gesac.theme.images/imgLogoBrasil.gif" alt="Brasil - Um País de todos" title="Brasil - Um País de todos" height="35" width="105"> -->
+        </li>
+      </ul>
     </div>
-	<div id="header">
-	<div class="container_11">
-    	<a href="<?php bloginfo('url')?>" id="logo"><img src="<?php bloginfo('template_url');?>/imgs/logo.png" alt="<?php bloginfo('title')?>" /></a>
-		<div id="top_right">	
-			<div id="subnav">
-				<a href="#">Mapa do Site</a> | <a href="#">Fale Conosco</a> | <a href="#">RSS</a> <a href="#"><img src="<?php bloginfo('template_url');?>/imgs/rss.png" alt="RSS" /></a>
-			</div>
-		    <!-- <form id="searchForm" action="#" method="post">
-				<input type="text" name="q" />
-				<input type="submit" value="Buscar" id="searchsubmit" />
-			</form> -->
-			<?php get_search_form(); ?>
-			<div id="acessibilidade">
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-mais.gif" alt="Aumentar letra" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a.gif" alt="Tamanho normal de letra" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-menos.gif" alt="Diminuir letra" /></a>&nbsp;
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-mais.gif" alt="Aumentar contraste" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-menos.gif" alt="Contraste normal" /></a>
-			</div>
-		</div>
-  </div>
+  <div id="header">
+
+    <ul id="acessibilidade">
+			<li>
+				<a href="#">
+					<span><img src="<?php bloginfo('template_url');?>/imgs/a.gif"/>Fonte normal</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				  <span><img src="<?php bloginfo('template_url');?>/imgs/a_menos.gif"/>Diminuir fonte</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				  <span><img src="<?php bloginfo('template_url');?>/imgs/a_mais.gif">Aumentar fonte</span>
+				</a>
+			</li>
+		</ul>
+
+    <h1 class="logo">
+      <a href="<?php bloginfo('url')?>"><?php bloginfo('title')?></a>
+    </h1>
+
+
+    <form id="searchForm" action="#" method="post">
+      <input type="text" name="q" />
+      <input type="button" value="buscar" />
+      <a id="fale_conosco" href="#"><img src="<?php bloginfo('template_url');?>/imgs/fale_conosco.png" /></a>
+    </form>
   </div>
 
     <div id="navigation">
         <?php wp_page_menu (array('show_home' => true)); ?>
         <!--><li><a href="<?php echo get_option('home')?>">Inicial</a></li>
-        <?php  wp_list_pages('title_li='); ?> -->
+        <?php  wp_list_pages('title_li='); ?>-->
    </div>
-   
+
