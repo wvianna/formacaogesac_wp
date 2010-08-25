@@ -1,6 +1,7 @@
 <?php get_header (); ?>
 
-  <div id='mainContent'>
+  <div id="mainContent" class="container_11">
+    <div id="content" class="grid_9">
     <div id="pageContent">
       <?php if( have_posts() ) : ?>
       <?php while( have_posts() ) : the_post() ?>
@@ -11,7 +12,8 @@
         <?php endwhile; ?>
       <?php endif; ?>
     </div>
-    <div id="right-column">
+    </div>
+    <div id="right-column" class="grid_2">
       <?php get_sidebar(); ?>
     </div>
   </div>
