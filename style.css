@@ -182,7 +182,7 @@ width:120px;
 float:right;
 }
 
-#header{
+#header {
 background:#fff url(imgs/bg_top.gif) no-repeat 100% 0;
 padding-top:23px;
 height:104px;
@@ -467,3 +467,111 @@ border: solid 1px #3A9AC8;
 box-shadow: none;
 }
 
+
+/* Widgets.css 
+* 
+*  Author: Marcos Maia Lopes
+*  Author e-mail: marcos@creativemarkup.com.br
+*
+_____________________________________________*/
+
+/* > Widget Destaque
+__________________________*/
+
+/*
+
+.widget_destaque div.hlTabs{
+	background:none;
+	border:0;
+	padding:0;
+    position:relative;
+}
+.widget_destaque div.hlTabs div.panel{
+    margin:0 10px;
+}
+.widget_destaque div.hlTabs .bt_prev
+, div.widget_destaque div.hlTabs .bt_next{
+    background:url('imgs/bt_hl.png') no-repeat;
+    display:block;
+    height:19px;
+    overflow:hidden;
+    position:absolute;
+    text-indent:-999em;
+    top:63px;
+    width:12px;
+    z-index:10;
+}
+.widget_destaque div.hlTabs .bt_prev{
+    background-position:left top;
+    left:0;
+}
+.widget_destaque div.hlTabs .bt_next{
+    background-position:right top;
+    right:0;
+}
+.widget_destaque div.hlTabs .bt_prev:hover{
+    background-position:left bottom;
+}
+.widget_destaque div.hlTabs .bt_next:hover{
+    background-position:right bottom;
+}
+.widget_destaque div.hlTabs ul{
+	background:none;
+	border:none;
+    left:50%;
+	margin:0;
+    margin-left:-75px;
+	padding:0;
+    position:absolute;
+    text-align:center;
+    top:150px;
+    width:150px;
+}
+.widget_destaque div.hlTabs ul li{
+	background:none;
+	border:none;
+    display:inline;
+	list-style:none;
+	margin:0;
+}
+.widget_destaque div.hlTabs ul li a{
+    color:#C5C5C5;
+	font-size:2.3em;
+	font-weight:bold;
+	margin-right:5px;
+	padding:0 2px 2px;
+	text-decoration:none;
+}
+.widget_destaque div.hlTabs ul li.ui-tabs-selected a
+, div.widget_destaque div.hlTabs ul li.ui-state-hover a{
+	color:#03374F;
+}
+.widget_destaque div.hlTabs div.ui-tabs-panel{
+	padding:0;
+}
+.widget_destaque div.hlTabs .thumb{
+    border:1px solid #ccc;
+	clear:both;
+	display:block;
+	height:140px;
+    margin:8px 15px 25px;
+	overflow:hidden;
+    padding:3px;
+	text-align:center;
+}
+.widget_destaque div.hlTabs .thumb img{
+	border:none;
+    width:304px;
+}
+.widget_destaque div.hlTabs h2{
+    font-size:100%;
+}
+.widget_destaque div.hlTabs h2 a{
+	display:block;
+	font-size:1.8em;
+    font-weight:normal;
+	margin-bottom:10px;
+	text-decoration:none;
+}
+
+*/
