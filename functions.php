@@ -2,6 +2,7 @@
 
   // includes
   include_once(TEMPLATEPATH . '/global/inc/the_thumb.php');
+  include_once(TEMPLATEPATH . '/global/inc/limit_chars.php');
   include_once(TEMPLATEPATH . '/global/inc/widget_destaque.php');
   include_once(TEMPLATEPATH . '/global/inc/widget_posts.php');
   include_once(TEMPLATEPATH . '/global/inc/widget_mundo_digital.php');
