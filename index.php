@@ -27,34 +27,7 @@
 	  <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("left-column-top") ) : ?>
 	  <?php endif ?>
       </div>
-      <div id="left-column-bottom">
-      
-      <h2>Notícias do Projeto</h2>
-      <ul class="mundo-digital hl">
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      <li>
-      <h3><a href="#">Sapien eget iaculis.</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie nisl eget magna vulputate eu elementum sapien magna vulputate eu elementum sapien...</a></p>
-      </li>
-      <li>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      <li>
-      <h3><a href="#">Sapien eget iaculis.</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie nisl eget magna vulputate eu elementum sapien magna vulputate eu elementum sapien...</a></p>
-      </li>
-      <li>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      </ul>
-      <a class="more" href="#">Mais notícias</a>
-      
+      <div id="left-column-bottom">  
       
 	  <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("left-column-bottom") ) : ?>
 	  <?php endif ?>
@@ -64,55 +37,11 @@
     <div id="center-column" class="grid_4 omega">
       <div id="center-column-top">
       
-      <h2>Mundo Digital</h2>
-      <ul class="mundo-digital hl">
-      <li>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      <li>
-      <h3><a href="#">Sapien eget iaculis.</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie nisl eget magna vulputate eu elementum sapien magna vulputate eu elementum sapien...</a></p>
-      </li>
-      </ul>
-      
 	  <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("center-column-top") ) : ?>
 	  <?php endif ?>
       </div>
       <div id="center-column-bottom">
-      
-            <h2>Rede Social</h2>
-      <ul class="rede-social hl">
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme1.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme1.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Sapien eget iaculis.</a></h3>
-      <p><span class="date">4/10/2010</span><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie nisl eget magna vulputate eu elementum sapien magna vulputate eu elementum sapien...</a></p>
-      </li>
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme1.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme1.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Sapien eget iaculis.</a></h3>
-      <p><span class="date">4/10/2010</span><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie nisl eget magna vulputate eu elementum sapien magna vulputate eu elementum sapien...</a></p>
-      </li>
-      <li>
-      <a href="#" class="alignleft"><img src="<?php bloginfo('template_url');?>/imgs/_eraseme1.jpg" alt="nomedousuario" /></a>
-      <h3><a href="#">Donec pretium sagittis</a></h3>
-      <p><span class="date">4/10/2010</span> <a href="#">Nulla pellentesque pellentesque commodo. Pellentesque sed mauris vel nisi interdum bibendum et a arcu. Pellentesque convallis fringilla eros bibendum et a arcu. Pellentesque convallis fringilla..</a></p>
-      </li>
-      </ul>
-      <a class="more" href="#">Mais rede</a>
-      
-      
-      
+    
 	  <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("center-column-bottom") ) : ?>
 	  <?php endif ?>
       </div>

@@ -6,38 +6,37 @@ Version: 1.0
 Author: Equipe NSI-Instituto Federal Fluminense
 */
 
-class widget_mundo_digital extends WP_Widget
+class widget_posts extends WP_Widget
 {	
-	function widget_mundo_digital()
+	function widget_posts()
 	{
-		$widget_args = array('classname' => 'widget_mundo_digital', 'description' => __( 'Mundo Digital') );                
-		parent::WP_Widget('mundodigital', __('Mundo Digital'), $widget_args);
+		$widget_args = array('classname' => 'widget_post', 'description' => __( 'Posts') );                
+		parent::WP_Widget('posts', __('Posts'), $widget_args);
                 
 	}
 
 	function widget($args, $instance)
 	{
 		extract($args);
-		$title = apply_filters('widget_title', empty($instance['title']) ? 'Mundo Digital' : $instance['title']);
+		$title = apply_filters('widget_title', empty($instance['title']) ? 'Posts' : $instance['title']);
 		$maxPages = empty($instance['maxPages']) ? 5 : $instance['maxPages'];    
                 $category_name = empty($instance['category_name']) ? 'category_name' : $instance['category_name'];
                 echo $before_widget;
-		echo $before_title . $title . $after_title;
-                ?>
-                <ul class="mundo-digital hl">
+		echo $before_title . $title . $after_title; ?>
+            <ul class="mundo-digital hl">
   			<?php $recent = new WP_Query("cat=$category_name&showposts=$maxPages"); 
     				while($recent->have_posts()) : $recent->the_post();?>
-                                       <li>
+                   <li>
    					 <h3><a href="<?php the_permalink(); ?>" ><?php the_title() ?></a></h3>
   					<p>
-   					 <span class="date"><?php the_date('d/m/Y') ?></span>
+   					  <span class="date"><?php the_date('d/m/Y') ?></span>
      					 <a href="<?php the_permalink(); ?>" ><?php limit_chars(the_content(), 300); ?></a>
    					 </p>
   					</li>			
   			<?php endwhile; ?> 
 			</ul>
-            <a class="more" href="#">Mais</a>
-        <?php
+            <a class="more" href="#">Mais notícias</a>
+            <?php
 	}
 
 	function update($new_instance, $old_instance)
@@ -91,4 +90,4 @@ class widget_mundo_digital extends WP_Widget
 }
 
 // register widget
-add_action('widgets_init', create_function('', 'return register_widget("widget_mundo_digital");'));
+add_action('widgets_init', create_function('', 'return register_widget("widget_posts");'));
