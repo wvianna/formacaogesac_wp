@@ -12,7 +12,8 @@ Template Name: Notícias do Projeto
     	<h1><?php the_title(); ?></h1>
     </p>
     <div id="pageContent">
-	<?php query_posts('');?>
+	<?php $categoria = $_GET['categoria']; ?>
+	<?php query_posts("cat=$categoria");?>
 	<?php if( have_posts() ) : ?>
       	<?php while( have_posts() ) : the_post() ?>
         <h2><?php the_title(); ?></h2>  
