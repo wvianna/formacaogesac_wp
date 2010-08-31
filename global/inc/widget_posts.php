@@ -31,7 +31,7 @@ class widget_posts extends WP_Widget
    					 <h3><a href="<?php the_permalink(); ?>" ><?php the_title() ?></a></h3>
   					<p>
    					  <span class="date"><?php the_date('d/m/Y') ?></span>
-     					 <a href="<?php the_permalink(); ?>" ><?php limit_chars(the_content(), 300); ?></a>
+     					 <a href="<?php the_permalink(); ?>" ><?php limit_chars(get_the_content(), 150); ?></a>
    					 </p>
   					</li>			
   			<?php endwhile; ?> 
