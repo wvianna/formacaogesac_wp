@@ -9,22 +9,24 @@ Template Name: Mundo Digital
   <div id="mainContent" class="container_11">
   <div id="content" class="grid_9" style="">
     <p>
-    	<h1><?php the_title(); ?></h1>
+    	<h2><?php the_title(); ?></h2>
     </p>
     <div id="pageContent">
+      <ul class="mundo-digital hl">
         <?php $categoria = $_GET['categoria']; ?>
 	<?php query_posts("cat=$categoria");?>
 	<?php if( have_posts() ) : ?>
-      	<?php while( have_posts() ) : the_post() ?>
-        <h2><?php the_title(); ?></h2>  
-        <div class="postContent">
-           <p>
-     	   <?php the_content(); ?> 
-           </p>
-           <br>
-        </div>
-        <?php endwhile; ?>
+      	  <?php while( have_posts() ) : the_post() ?>           
+               <li>
+   		   <h3><a href="<?php the_permalink(); ?>" ><?php the_title() ?></a></h3>
+  		   <p>
+   			<span class="date"><?php the_date('d/m/Y') ?></span>
+			<?php limit_chars(get_the_content(), 380); ?>
+		   </p>
+                </li>  	   
+          <?php endwhile; ?>
      	<?php endif; ?>
+      </ul>
     </div>    
     
   </div>
