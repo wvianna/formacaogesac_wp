@@ -13,8 +13,9 @@ Template Name: Notícias do Projeto
     </p>
     <div id="pageContent">
       <ul class="mundo-digital hl">
+        
         <?php $categoria = $_GET['categoria']; ?>
-	<?php query_posts("cat=$categoria");?>
+	<?php query_posts("cat=$categoria&posts_per_page=5&paged=".get_query_var('paged'))?>
 	<?php if( have_posts() ) : ?>
       	  <?php while( have_posts() ) : the_post() ?>           
                <li>
@@ -26,7 +27,9 @@ Template Name: Notícias do Projeto
                 </li>  	   
           <?php endwhile; ?>
      	<?php endif; ?>
+        
       </ul>
+      <div><?php posts_nav_link(); ?></div>
     </div>    
     
   </div>
