@@ -19,6 +19,7 @@ class widget_posts extends WP_Widget
 	{
 		extract($args);
 		$title = apply_filters('widget_title', empty($instance['title']) ? 'Posts' : $instance['title']);
+                $url_pagina = empty($instance['url_pagina']) ? 'url_pagina' : $instance['url_pagina'];
 		$maxPages = empty($instance['maxPages']) ? 5 : $instance['maxPages'];    
                 $category_name = empty($instance['category_name']) ? 'category_name' : $instance['category_name'];
                 echo $before_widget;
@@ -30,12 +31,12 @@ class widget_posts extends WP_Widget
    					 <h3><a href="<?php the_permalink(); ?>" ><?php the_title() ?></a></h3>
   					<p>
    					  <span class="date"><?php the_date('d/m/Y') ?></span>
-     					 <a href="<?php the_permalink(); ?>" ><?php limit_chars(the_content(), 300); ?></a>
+     					 <a href="<?php the_permalink(); ?>" ><?php limit_chars(get_the_content(), 150); ?></a>
    					 </p>
   					</li>			
   			<?php endwhile; ?> 
 			</ul>
-            <a class="more" href="#">Mais notícias</a>
+            <a class="more" href="<?php echo $url_pagina; ?>&categoria=<?php echo $category_name;?>">Mais</a>
             <?php
 	}
 
@@ -52,6 +53,7 @@ class widget_posts extends WP_Widget
 	function form($instance)
 	{
 	    	$title = esc_attr( $instance['title'] );
+                $url_pagina = esc_attr( $instance['url_pagina'] );
 	    	$maxPages = esc_attr( $instance['maxPages'] );
 		$category_name = esc_attr($instance['category_name']);
                 $categories = get_categories();
@@ -64,6 +66,23 @@ class widget_posts extends WP_Widget
                                maxlength="26" value="<?php echo $title; ?>" 
                                class="widefat" 
                         />
+		</p>
+                <p>
+			<label for="<?php echo $this->get_field_id('url_pagina'); ?>">URL da Página:</label>
+			<select id="<?php echo $this->get_field_id('url_pagina'); ?>" 
+                                name="<?php echo $this->get_field_name('url_pagina'); ?>"> 
+ 				<option value=""><?php echo attribute_escape(__('Seleciona a página')); ?></option> 
+                                <?php $pages = get_pages();
+                                       foreach ($pages as $pagg) { ?>
+                                       		<option <?php if ($url_pagina == get_page_link($pagg->ID)) echo 'selected="selected"';
+  						$option = 'value="'.get_page_link($pagg->ID).'" >';                                                
+						$option .= $pagg->post_title;
+                                                $option .= '</option>';
+                                                echo $option;
+  					}
+ 				?>
+
+			</select>
 		</p>
                 <p>
 			<label for="<?php echo $this->get_field_id('category_name'); ?>">Categoria:</label>
