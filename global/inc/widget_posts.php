@@ -69,12 +69,20 @@ class widget_posts extends WP_Widget
 		</p>
                 <p>
 			<label for="<?php echo $this->get_field_id('url_pagina'); ?>">URL da Página:</label>
-			<input type="text" 
-                               id="<?php echo $this->get_field_id('url_pagina'); ?>" 
-                               name="<?php echo $this->get_field_name('url_pagina'); ?>" 
-                               maxlength="1000" value="<?php echo $url_pagina; ?>" 
-                               class="widefat" 
-                        />
+			<select id="<?php echo $this->get_field_id('url_pagina'); ?>" 
+                                name="<?php echo $this->get_field_name('url_pagina'); ?>"> 
+ 				<option value=""><?php echo attribute_escape(__('Seleciona a página')); ?></option> 
+                                <?php $pages = get_pages();
+                                       foreach ($pages as $pagg) { ?>
+                                       		<option <?php if ($url_pagina == get_page_link($pagg->ID)) echo 'selected="selected"';
+  						$option = 'value="'.get_page_link($pagg->ID).'" >';                                                
+						$option .= $pagg->post_title;
+                                                $option .= '</option>';
+                                                echo $option;
+  					}
+ 				?>
+
+			</select>
 		</p>
                 <p>
 			<label for="<?php echo $this->get_field_id('category_name'); ?>">Categoria:</label>
