@@ -163,6 +163,7 @@ a:hover { text-decoration:underline; }
 background:url("imgs/bgDivHeaderBrasil.gif") repeat-x scroll 0 0 transparent;
 padding-bottom:4px;
 height:35px;
+margin-top:25px;
 }
 
 #headerbr .mclogo {
@@ -235,13 +236,13 @@ margin-bottom:3em
 #content ul.hl h3 a, #content ul.hl li a { color:#38464C; }
 #content ul.hl a:hover {text-decoration:none; color:#11719C;}
 #content ul.hl {
-	border-top:1px dotted #1F9ED7;
+	border-bottom:1px dotted #1F9ED7;
 	padding-bottom:3px;
 	background:url("imgs/bg_body.gif") repeat-x 0 100%;
 	list-style: none none;
 	line-height:1.5em;
 }
-#content ul.hl li {border-bottom: 1px dotted #1F9ED7; padding:.5em 0}
+#content ul.hl li {clear:both; border-top: 1px dotted #1F9ED7; padding:.5em 0}
 #content ul.hl p {margin-bottom:.5em;}
 #content ul.hl .date {display:block; margin-bottom:.6em; margin-top:-1em;}
 .date {color: #999; font-size:.8em;}
@@ -254,12 +255,12 @@ margin-bottom:3em
 	font-size:.85em;
 	background:url(imgs/bullet.gif) no-repeat 100% 50%;
 }	
-
+#content li {list-style:none none}
 #content ul.mundo-digital {margin-bottom:2em;}
 
-#content .alignleft {float:left; margin:.2em 1em 0 0; display:block;}
+#content .alignleft {clear:both; float:left; margin:.2em 1em 0 0; display:block;}
 #content .alignleft .wp-caption-text {text-align:left;}
-#content .alignright {float:right; margin:.2em 0 0 1em; display:block;}
+#content .alignright {clear:both; float:right; margin:.2em 0 0 1em; display:block;}
 #content .alignright .wp-caption-text {text-align:right;}
 #content .aligncenter {text-align:center; margin:1em 0; display:block; clear:both; margin-left:auto; margin-right:auto;}
 #content .aligncenter .wp-caption-text {text-align:left;}
