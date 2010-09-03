@@ -15,7 +15,7 @@ Template Name: Notícias do Projeto
       <ul class="mundo-digital hl">
         
         <?php $categoria = $_GET['categoria']; ?>
-	<?php query_posts("cat=$categoria?posts_per_page=5?paged=".get_query_var('paged'))?>
+	<?php query_posts("cat=$categoria&posts_per_page=5&paged=".get_query_var('paged'))?>
 	<?php if( have_posts() ) : ?>
       	  <?php while( have_posts() ) : the_post() ?>           
                <li>

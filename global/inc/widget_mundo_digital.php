@@ -37,8 +37,9 @@ class widget_mundo_digital extends WP_Widget
   					</li>			
   			<?php endwhile; ?> 
 		</ul>
-                
-           	<a class="more" href="<?php echo $url_pagina; ?>&categoria=<?php echo $category_name;?>">Mais</a>
+               
+		<a class="more" href="<?php echo $url_pagina; ?>?categoria=<?php echo $category_name;?>">Mais</a> 
+<!--           	<a class="more" href="<?php echo $url_pagina; ?>&categoria=<?php echo $category_name;?>">Mais</a> -->
 
         <?php
 	}
