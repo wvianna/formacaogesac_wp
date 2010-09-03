@@ -58,5 +58,3 @@ Template Name: Mundo Digital
   </div>
   
 <?php get_footer (); ?>
-
-
