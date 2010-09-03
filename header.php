@@ -81,8 +81,6 @@
   </div>
 
     <div id="navigation">
-        <?php wp_page_menu (array('show_home' => true)); ?>
-        <!--><li><a href="<?php echo get_option('home')?>">Inicial</a></li>
-        <?php  wp_list_pages('title_li='); ?> -->
-   </div>
+       <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+    </div>
    

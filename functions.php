@@ -8,6 +8,12 @@
   include_once(TEMPLATEPATH . '/global/inc/widget_mundo_digital.php');
   include_once(TEMPLATEPATH . '/global/inc/widget_atividades.php');
 
+   // Adiciona as funcionalidades do wordpress 3.0
+  add_theme_support( 'nav-menus' );
+  register_nav_menus( array(
+      'primary' => __( 'Primary Navigation', 'formacaogesac' ),
+  ) );
+
   if ( function_exists('register_sidebar') )
     register_sidebar(array('name' => "left-column-top"));
     register_sidebar(array('name' => "left-column-bottom"));
