@@ -62,7 +62,7 @@
     	<a href="<?php bloginfo('url')?>" id="logo"><img src="<?php bloginfo('template_url');?>/imgs/logo.png" alt="<?php bloginfo('title')?>" /></a>
 		<div id="top_right">	
 			<div id="subnav">
-				<a href="#">Mapa do Site</a> | <a href="#">Fale Conosco</a> | <a href="#">RSS</a> <a href="#"><img src="<?php bloginfo('template_url');?>/imgs/rss.png" alt="RSS" /></a>
+				<a href="<?php echo get_bloginfo('url').'/mapa-do-site'; ?>">Mapa do Site</a> | <a href="<?php echo get_bloginfo('url').'/fale-conosco'; ?>">Fale Conosco</a> | <a href="<?php echo get_bloginfo('url').'/feed'; ?>">RSS</a> <a href="<?php echo get_bloginfo('url').'/feed'; ?>"><img src="<?php bloginfo('template_url');?>/imgs/rss.png" alt="RSS" /></a>
 			</div>
 		    <!-- <form id="searchForm" action="#" method="post">
 				<input type="text" name="q" />
