@@ -75,7 +75,10 @@ class widget_activity extends WP_Widget
 				<?php if ( empty( $_POST['page'] ) ) : ?>
 					</ul>
 				<?php endif; ?>
-			        <a  class="more" href="<?php echo get_bloginfo('url').'/'.BP_ACTIVITY_SLUG; ?>">Leia Mais &raquo;</a>
+			      <!--  <a  class="more" href="<?php echo get_bloginfo('url').'/'.BP_ACTIVITY_SLUG; ?>">Leia Mais &raquo;</a> -->
+                              <a  class="more" href="http://gesac.ifce.edu.br/wp/activity">Leia Mais &raquo;</a>
+
+
 
 			<?php else : ?>
 				<div id="message" class="info">
