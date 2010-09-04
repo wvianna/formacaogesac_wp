@@ -3,7 +3,6 @@
    		<div class="grid_4">
             <a href="#">Início</a> •
             <a href="<?php echo site_url() ?>/faqs/" title="FAQs">FAQs</a> •
-            <a href="<?php echo site_url() ?>/termos-de-uso/" title="Termos de uso">Termos de uso</a> •
             <a href="<?php echo site_url() ?>/quem-faz/" title="Quem Faz">Quem Faz</a>
 		</div>
 		<div class="grid_4" style="text-align:center">
