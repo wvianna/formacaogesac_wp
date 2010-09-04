@@ -19,7 +19,9 @@
     register_sidebar(array('name' => "left-column-bottom"));
     register_sidebar(array('name' => "center-column-top"));
     register_sidebar(array('name' => "center-column-bottom"));
-    register_sidebar(array('name' => "right-column"));
+    register_sidebar(array('name' => "right-column1"));
+    register_sidebar(array('name' => "right-column2"));
+    register_sidebar(array('name' => "right-column3"));
 
   // Registra os scripts do tema
   function my_theme_scripts ()
