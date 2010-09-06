@@ -3,7 +3,7 @@ Theme Name: Tema do blog institucional do Formação Gesac
 Theme URI: http://www.formacaogesac.mc.gov.br/
 Description: Tema para o blog institucional do projeto formação Gesac.
 Author: Equipe NSI - IFF & Lucas Petes <lucas@milk-it.net>
-Version: 1.1
+Version: 1.2
 */
 
 /* Reset CSS
@@ -149,7 +149,7 @@ html {font-size:0.675em;}
 
 body {
  padding:0;
- font-size:1.2em;
+ font-size:1.15em;
  line-height:1.5em;
  font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Tahoma", sans-serif;
  background-image:url("imgs/bg_body.gif");
@@ -230,7 +230,7 @@ margin-bottom:3em
 #content h1,
 #content h2 { margin-bottom:1em;}
 #content h1 { margin-top:.5em; color: #0091D2; font-size:2em}
-#content h2 { font-size:1.4em; color:#0091D2; margin-bottom:.6em; }
+#content h2 { font-size:1.4em !important; color:#0091D2 !important; margin-bottom:.6em !important; }
 #content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
 #content ul { list-style: inside url(imgs/bullet.gif); line-height:2em; }
 #content ul.hl h3 a, #content ul.hl li a { color:#38464C; }
@@ -245,7 +245,8 @@ margin-bottom:3em
 #content ul.hl li {clear:both; border-top: 1px dotted #1F9ED7; padding:.5em 0}
 #content ul.hl p {margin-bottom:.5em;}
 #content ul.hl .date {display:block; margin-bottom:.6em; margin-top:-1em;}
-.date {color: #999; font-size:.8em;}
+#content ul.hl .time-since {display:block; margin-bottom:.6em;}
+.date, .time-since, .view, .item-button {color: #999; font-size:.8em;}
 .more {
 	display:block;
 	text-align:right;
@@ -304,18 +305,28 @@ li#right_kitsos,
 li#right_redmine,
 li#right_twitter,
 li#right_orkut,
-li#right_youtube { background-image:url(imgs/icon_right.gif); background-repeat:no-repeat; }
+li#right_youtube,
+li#menu-item-107,
+li#menu-item-106,
+li#menu-item-108,
+li#menu-item-110,
+li#menu-item-112,
+li#menu-item-105,
+li#menu-item-113,
+li#menu-item-104,
+li#menu-item-114,
+li#menu-item-115 { background-image:url(imgs/icon_right.gif); background-repeat:no-repeat; }
 
-li#right_pontos {background-position:0 12px;}
-li#right_equipe {background-position:0 -34px;}
-li#right_biblioteca {background-position:0 -78px;}
-li#right_saladeaula {background-position:0 -123px;}
-li#right_redesocial {background-position:0 -168px;}
-li#right_fotosevideos {background-position:0 -213px;}
-li#right_servicospublicos {background-position:0 -257px;}
-li#right_kitsos {background-position:0 -302px;}
-li#right_redmine {background-position:0 -348px;}
-li#right_twitter {background-position:0 -392px;}
+li#right_pontos, li#menu-item-107 {background-position:0 12px;}
+li#right_equipe, li#menu-item-106 {background-position:0 -34px;}
+li#right_biblioteca, li#menu-item-108 {background-position:0 -78px;}
+li#right_saladeaula, li#menu-item-110 {background-position:0 -123px;}
+li#right_redesocial, li#menu-item-112 {background-position:0 -168px;}
+li#right_fotosevideos, li#menu-item-105 {background-position:0 -213px;}
+li#right_servicospublicos, li#menu-item-113 {background-position:0 -257px;}
+li#right_kitsos, li#menu-item-104 {background-position:0 -302px;}
+li#right_redmine, li#menu-item-114 {background-position:0 -348px;}
+li#right_twitter, li#menu-item-115 {background-position:0 -392px;}
 li#right_orkut {background-position:0 -436px;}
 li#right_youtube {background-position:0 -485px;}
 
@@ -467,6 +478,14 @@ border: solid 1px #3A9AC8;
 -moz-box-shadow: none;
 box-shadow: none;
 }
+
+#myGallery { margin-bottom:2em; padding-bottom:100px}
+#myGallery .slideElement { background-position:center 0 !important;}
+#myGallery .slideInfoZone {background: #fff url("imgs/bg_body.gif") repeat-x !important; opacity:1 !important; position:absolute; height:75px !important;  padding:15px 0 0 15px !important;}
+#myGallery .slideInfoZone h2 { background:none !important; font-weight:normal !important; margin:0 0 .6em 0 !important;}
+#myGallery .slideInfoZone p { color:#38464C !important; font-size:inherit !important; margin:0 !important;}
+
+#myGallery .slideInfoZone * {background:none; opacity:1; }
 
 
 /* Widgets.css 
