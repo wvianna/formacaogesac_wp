@@ -2,7 +2,7 @@
    <div class="container_11">
    		<div class="grid_4">
             <a href="#">Início</a> •
-            <a href="<?php echo site_url() ?>/faqs/" title="FAQs">FAQs</a> •
+            <a href="<?php echo site_url() ?>/perguntas-frequentes/" title="FAQs">FAQs</a> •
             <a href="<?php echo site_url() ?>/quem-faz/" title="Quem Faz">Quem Faz</a>
 		</div>
 		<div class="grid_4" style="text-align:center">
