@@ -40,5 +40,3 @@ Template Name: Notícias do Projeto
     <div class="clear"></div>
   </div>
 <?php get_footer (); ?>
-
-
