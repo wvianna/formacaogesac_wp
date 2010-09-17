@@ -5,8 +5,8 @@ Template Name: Pontos Atendidos
 ?>
 <?php get_header (); ?>
   <div id="mainContent" class="container_11">
-    <div id="content" class="grid_8">
-    <div id="pageContent" class="main">
+  <div id="content" class="grid_9" style="">
+    <div id="pageContent">
 
 <h1>Pontos atendidos</h1>
 <?php
@@ -50,11 +50,13 @@ echo'
 ?>
                     
    
-    </div>
-    </div>
-    <div id="right-column" class="grid_3">
-      <?php locate_template( array( 'sidebar.php' ), true ) ?>
-    </div>
-    <div class="clear"></div>
-</div>
+    </div>    
+    
+  </div>
+  <div id="right-column" class="grid_2">
+     <?php get_sidebar(); ?>
+  </div>
+  <div class="clear"></div>
+  </div>
+  
 <?php get_footer (); ?>

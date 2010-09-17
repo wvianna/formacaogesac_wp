@@ -9,8 +9,9 @@ require( dirname(__FILE__) . '../../../../wp-load.php' );
 ?>
 <?php get_header (); ?>
   <div id="mainContent" class="container_11">
-    <div id="content" class="grid_8">
-    <div id="pageContent" class="main">
+  <div id="content" class="grid_9" style="">
+    <div id="pageContent">
+
 
 
       <div id="conteudo">
@@ -97,11 +98,13 @@ echo "</table>
 
                     
    </div>
-    </div>
-    </div>
-    <div id="right-column" class="grid_3">
-      <?php locate_template( array( 'sidebar.php' ), true ) ?>
-    </div>
-    <div class="clear"></div>
-</div>
+    </div>    
+    
+  </div>
+  <div id="right-column" class="grid_2">
+     <?php get_sidebar(); ?>
+  </div>
+  <div class="clear"></div>
+  </div>
+  
 <?php get_footer (); ?>
