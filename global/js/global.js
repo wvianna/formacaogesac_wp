@@ -346,7 +346,7 @@ j(document).ready( function() {
 	/**** Page Load Actions *******************************************************/
        /* Adicionando ação para q os links customizados abram em novas abas*/
        j(".menu-item-type-custom a").attr('target','_blank');
-
+       j("#menu-item-66 a").attr('target','_self');
 	/* Hide Forums Post Form */
 	if ( j('div.forums').length )
 		j('div#new-topic-post').hide();
