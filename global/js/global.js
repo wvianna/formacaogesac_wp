@@ -30,6 +30,26 @@ jQuery(function()
         return false;
     }); */
     
+    //Funcionalidade de acessibilidade - Aumentar, normalizar e diminuir fonte
+    jQuery(document).ready(function(){  
+    var fonte = 13;  
+    jQuery('#aumenta_fonte').click(function(){  
+        if (fonte<19){  
+            fonte = fonte+1;  
+            jQuery('body').css({'font-size' : fonte+'px'});  
+        }  
+    });
+    jQuery('#normaliza_fonte').click(function(){  
+        fonte = 12.4167;  
+        jQuery('body').css({'font-size' : fonte+'px'});  
+    });  
+    jQuery('#diminui_fonte').click(function(){  
+        if (fonte>10){  
+            fonte = fonte-1;  
+            jQuery('body').css({'font-size' : fonte+'px'});  
+        }  
+    });
+    });
     
     // Ativa o plugin back to top
     jQuery('#top-link').topLink({

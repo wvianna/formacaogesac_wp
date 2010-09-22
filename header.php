@@ -70,9 +70,9 @@
 			</form> -->
 			<?php get_search_form(); ?>
 			<div id="acessibilidade">
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-mais.gif" alt="Aumentar letra" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a.gif" alt="Tamanho normal de letra" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-menos.gif" alt="Diminuir letra" /></a>&nbsp;
+				<a href="#" id="aumenta_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-mais.gif" alt="Aumentar letra" /></a>
+				<a href="#" id="normaliza_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a.gif" alt="Tamanho normal de letra" /></a>
+				<a href="#" id="diminui_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-menos.gif" alt="Diminuir letra" /></a>&nbsp;
 				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-mais.gif" alt="Aumentar contraste" /></a>
 				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-menos.gif" alt="Contraste normal" /></a>
 			</div>
