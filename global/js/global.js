@@ -30,6 +30,7 @@ jQuery(function()
         return false;
     }); */
     
+    
     //Funcionalidade de acessibilidade - Aumentar, normalizar e diminuir fonte
     jQuery(document).ready(function(){  
     var fonte = 13;  
@@ -48,6 +49,26 @@ jQuery(function()
             fonte = fonte-1;  
             jQuery('body').css({'font-size' : fonte+'px'});  
         }  
+    });
+    jQuery('#habilita_contraste').click(function(){  
+        css = document.getElementById("contraste");
+        if (css.href.search("style.css") != -1) {
+            css.disable = true;
+            css.href = css.href + "contraste.css";
+            css.href = css.href.replace("style.css", "");
+            css.disable = false;
+        }
+        alert(css.href);
+    });
+    jQuery('#desabilita_contraste').click(function(){  
+        css = document.getElementById("contraste");
+        if (css.href.search("contraste.css") != -1) {
+            css.disable = true;
+            css.href = css.href + "style.css";
+            css.href = css.href.replace("contraste.css", "");
+            css.disable = false;
+        }
+        alert(css.href);
     });
     });
     

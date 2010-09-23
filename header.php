@@ -50,7 +50,7 @@
 	 */
 	wp_head();
 ?>
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link id="contraste" rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 <body>
 	<div id="headerbr">
@@ -73,8 +73,8 @@
 				<a href="#" id="aumenta_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-mais.gif" alt="Aumentar letra" /></a>
 				<a href="#" id="normaliza_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a.gif" alt="Tamanho normal de letra" /></a>
 				<a href="#" id="diminui_fonte"><img src="<?php bloginfo('template_url');?>/imgs/icon_a-menos.gif" alt="Diminuir letra" /></a>&nbsp;
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-mais.gif" alt="Aumentar contraste" /></a>
-				<a href="#"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-menos.gif" alt="Contraste normal" /></a>
+				<a href="#" id="habilita_contraste"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-mais.gif" alt="Aumentar contraste" /></a>
+				<a href="#" id="desabilita_contraste"><img src="<?php bloginfo('template_url');?>/imgs/icon_c-menos.gif" alt="Contraste normal" /></a>
 			</div>
 		</div>
   </div>
