@@ -31,7 +31,7 @@ jQuery(function()
     }); */
     
     
-    //Funcionalidade de acessibilidade - Aumentar, normalizar e diminuir fonte
+    //Funcionalidade de acessibilidade - Aumentar, normalizar e diminuir fonte, além de contraste   
     jQuery(document).ready(function(){  
     var fonte = 13;  
     jQuery('#aumenta_fonte').click(function(){  
@@ -58,7 +58,6 @@ jQuery(function()
             css.href = css.href.replace("style.css", "");
             css.disable = false;
         }
-        alert(css.href);
     });
     jQuery('#desabilita_contraste').click(function(){  
         css = document.getElementById("contraste");
@@ -68,7 +67,6 @@ jQuery(function()
             css.href = css.href.replace("contraste.css", "");
             css.disable = false;
         }
-        alert(css.href);
     });
     });
     
