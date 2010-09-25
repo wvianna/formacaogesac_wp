@@ -1,3 +1,7 @@
-body {
-    color: red;
-}
+@import url("style.css");
+
+body, #content { background-image:none; background:black; color:white !important; }
+
+a, #content h1, #content h2, #content h3 { color:#00EAFF; } #header a { color: #03F;}
+
+#navigation { background:#333;}
