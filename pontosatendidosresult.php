@@ -35,7 +35,7 @@ echo "<html>
       <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
       </head>
       <body>
-      Para o estado: \"$uf\" temos os seguintes códigos de pontos Gesac, ordenados por município e estabelecimento. Identifique o seu ponto Gesac, copie e cole o número do campo \"Cod Pto Gesac\" para o \"Código de Ponto Gesac\" na página de cadastro do usuário na rede social.     
+      Para a Unidade da Federação: \"$uf\" temos os seguintes códigos de pontos Gesac, ordenados por município e estabelecimento. Identifique o seu ponto Gesac, copie e cole o número do campo \"Cod Pto Gesac\" para o \"Código de Ponto Gesac\" na página de cadastro do usuário na rede social.     
      <table id=\"tabelaresultado\" cellspacing=\"0\" cellpadding=\"0\" border=\"1\" width=\"100%\" align=\"center\">
      <tr color=\"red\">
        <th>Cod Pto Gesac</th>
