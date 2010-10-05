@@ -23,7 +23,7 @@ echo'
   </label>
   <form action="';echo get_bloginfo('url').'/resultado-pontos-atendidos/"'; echo ' method="post">
    <select name="estado" id="estado">  
-    <option value="">----</option>1
+    <option value="">Todos</option>
     <option value="AC">Acre</option>
     <option value="AL">Alagoas</option>
     <option value="AP">Amapá</option>

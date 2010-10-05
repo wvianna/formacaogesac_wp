@@ -19,7 +19,14 @@ require( dirname(__FILE__) . '../../../../wp-load.php' );
 <?php
 
 $uf = $_POST["estado"];
-$sql = "select * from wp_gesac_ponto where uf = '$uf' order by municipio, estabelecimento;";
+if ($_POST["estado"]='Todos')
+{
+	$sql = "select * from wp_gesac_ponto order by municipio, estabelecimento;";
+}
+else
+{
+	$sql = "select * from wp_gesac_ponto where uf = '$uf' order by municipio, estabelecimento;";
+}
 $rs = mysql_query($sql) or die ("Erro no acesso ao banco");
 
 
