@@ -14,7 +14,8 @@
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true_or_false&amp;key=ABQIAAAAXizTRQqQO2FNauoneRDF_BT2yXp_ZAY8_ufC3CFXhHIE1NvwkxQ5VqeAwtFyHmlgftZ5J_MKplNe7g" type="text/javascript"></script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true_or_false&amp;key=ABQIAAAAhkv1LQ5o7adUjjGMXuxtdRRTX-7oDu6j1DQkIYv0UFt-E-EijhS9-OHg24MdK1xcB_RJijEUS9Rlgw" type="text/javascript"></script>
+
 
 	<script type="text/javascript">
 		//<![CDATA[
