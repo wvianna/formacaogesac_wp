@@ -1,4 +1,7 @@
 <?php
+session_start();
+?>
+<?php
 /*
 Template Name: Pontos Atendidos Result
 */
@@ -18,6 +21,7 @@ require( dirname(__FILE__) . '../../../../wp-load.php' );
 <h1>Pontos atendidos</h1>
 <?php
 
+$_SESSION['uf']=$_POST["estado"];
 $uf = $_POST["estado"];
 if ($_POST["estado"]='Todos')
 {
@@ -30,26 +34,27 @@ else
 $rs = mysql_query($sql) or die ("Erro no acesso ao banco");
 
 
-echo "<html>
+echo '<html>
       <head>
-      <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       </head>
       <body>
-      Para a Unidade da Federação: \"$uf\" temos os seguintes códigos de pontos Gesac, ordenados por município e estabelecimento. Identifique o seu ponto Gesac, copie e cole o número do campo \"Cod Pto Gesac\" para o \"Código de Ponto Gesac\" na página de cadastro do usuário na rede social.     
-     <table id=\"tabelaresultado\" cellspacing=\"0\" cellpadding=\"0\" border=\"1\" width=\"100%\" align=\"center\">
-     <tr color=\"red\">
-       <th>Cod Pto Gesac</th>
-       <th>Município</th>
-       <th>Estabelecimento</th>
-       <th>Logradouro</th>
-       <th>Número</th>
-       <th>Bairro</th>
-       <th>Complemento</th>
-       <th>CEP</th>
-       <th>E-mail</th>
-       <th>Latitude</th>
-       <th>Longitude</th>
-     </tr>";
+      Para a Unidade da Federação: "' . $uf .'" temos os seguintes códigos de pontos Gesac, ordenados por município e estabelecimento. Identifique o seu ponto Gesac, copie e cole o número do campo "Cod Pto Gesac" para o "Código de Ponto Gesac" na página de cadastro do usuário na rede social.<br><br>
+			<a href="'. get_bloginfo('url').'/mapa-dos-pontos/">Ver no mapa</a><br><br>
+      <table id="tabelaresultado" cellspacing="0" cellpadding="0" border="1" width="100%" align="center">
+      <tr color="red">
+				<th>Cod Pto Gesac</th>
+				<th>Município</th>
+				<th>Estabelecimento</th>
+				<th>Logradouro</th>
+				<th>Número</th>
+				<th>Bairro</th>
+				<th>Complemento</th>
+				<th>CEP</th>
+				<th>E-mail</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+			</tr>';
 $i=0;
 while ($reg = mysql_fetch_assoc($rs)){
 $id = $reg["gesac"];
