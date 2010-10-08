@@ -23,7 +23,7 @@ require( dirname(__FILE__) . '../../../../wp-load.php' );
 
 $_SESSION['uf']=$_POST["estado"];
 $uf = $_POST["estado"];
-if ($_POST["estado"]=='Todos')
+if ($_POST["estado"]=='TODOS')
 {
 	$sql = "select * from wp_gesac_ponto order by municipio, estabelecimento;";
 }
