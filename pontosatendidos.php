@@ -19,11 +19,11 @@ Por tratar-se de um projeto piloto, nesta fase inicial que vai até maio de 2011
 <?php
 echo'  
   <label>
-    Estado
+    Unidade da Federação
   </label>
   <form action="';echo get_bloginfo('url').'/resultado-pontos-atendidos/"'; echo ' method="post">
    <select name="estado" id="estado">  
-    <option value="">----</option>1
+    <option value="TODOS">TODOS</option>
     <option value="AC">Acre</option>
     <option value="AL">Alagoas</option>
     <option value="AP">Amapá</option>
