@@ -30,6 +30,42 @@ jQuery(function()
         return false;
     }); */
     
+		//Função de expandir e retrair
+		jQuery(document).ready(function(){
+        jQuery('a#retrair_todos').click(function() {
+            jQuery('ul.sub-menu', jQuery(this).parent()).slideUp('fast');
+						jQuery('a#expandir').html("<span>+</span>");
+            return false;
+        });
+    });
+   
+    jQuery(document).ready(function(){
+        jQuery('a#expandir_todos').click(function() {
+            jQuery('ul.sub-menu', jQuery(this).parent()).slideDown('fast');
+						jQuery('a#expandir').html("<span>-</span>");
+            return false;
+        });
+    });
+   
+    jQuery(document).ready(function(){
+        jQuery('ul li.parent a').click(function() {
+            jQuery('ul.sub-menu', jQuery(this).parent()).slideToggle('fast');
+            return false;
+        });
+    });
+		
+		jQuery(document).ready(function(){
+			jQuery("a#expandir").click(function() {
+				var text = jQuery(this).text();
+				if (text == "+") {
+				  jQuery(this).html("<span>-</span>");
+				}
+				else {
+				  jQuery(this).html("<span>+</span>");
+				}
+			});
+		});
+		//**********************************************************************************************
     
     //Funcionalidade de acessibilidade - Aumentar, normalizar e diminuir fonte, além de contraste   
     jQuery(document).ready(function(){  

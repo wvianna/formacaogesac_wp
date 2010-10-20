@@ -604,29 +604,22 @@ __________________________*/
 	overflow:auto;
 }
 
-#tabelaresultado {
-	border:1px solid #e7e7e7;
+ul#pontos {
+	border: 1px solid #e7e7e7;
 }
 
-#tabelaresultado th {
-	color:white;
-	background-color:#1f9ed7;	
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	padding:3px;
-	vertical-align:top;
+a#expandir_todos {
+	margin-right: 50px;
+}
+
+a#expandir span {
+	font-size: 30px;
 }
 
 #linha_com_cor {
 	background-color:#c7e7f5;	
 	padding:3px;
 	vertical-align:top;
-}
-
-#linha_com_cor td {
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	font-size:10px;
 }
 
 #linha_sem_cor {
@@ -642,3 +635,14 @@ __________________________*/
 }
 
 .container_11 .grid_900 {width:95%;}
+
+ul .sub-menu {
+	display: none;
+}
+
+
+
+/*Css da página paginacao.php*/
+.pgoff {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #FF0000; text-decoration: none}
+a.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #003366; text-decoration: none}
+a:hover.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #0066cc; text-decoration:underline}
