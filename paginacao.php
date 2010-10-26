@@ -4,7 +4,7 @@
         
         // Verifica se esta na primeira página, se nao estiver ele libera o link para anterior
         if ( $pg > 0) { 
-                echo "<a href=http://localhost/wp/portal/resultado-pontos-atendidos/?pg=".($pg-1) ."class=pg><b>&laquo; anterior</b></a>";
+                echo "<a href=".get_bloginfo('url')."/resultado-pontos-atendidos/?pg=".($pg-1) ."class=pg><b>&laquo; anterior</b></a>";
         } else { 
                 echo "<font color=#CCCCCC>&laquo; anterior</font>";
         }
@@ -16,13 +16,13 @@
                         echo " <span class=pgoff>[$i_pg]</span> ";
                 } else {
                         $i_pg2 = $i_pg-1;
-                        echo " <a href=http://localhost/wp/portal/resultado-pontos-atendidos/?pg=$i_pg2 class=pg><b>$i_pg</b></a> ";
+                        echo " <a href=".get_bloginfo('url')."/resultado-pontos-atendidos/?pg=$i_pg2 class=pg><b>$i_pg</b></a> ";
                 }
         }
         
         // Verifica se esta na ultima página, se nao estiver ele libera o link para próxima
         if (($pg+2) < $quant_pg) { 
-                echo "<a href=http://localhost/wp/portal/resultado-pontos-atendidos/?pg=".($pg+1)." class=pg><b>próximo &raquo;</b></a>";
+                echo "<a href=".get_bloginfo('url')."/resultado-pontos-atendidos/?pg=".($pg+1)." class=pg><b>próximo &raquo;</b></a>";
         } else { 
                 echo "<font color=#CCCCCC>próximo &raquo;</font>";
         }
