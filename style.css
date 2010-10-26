@@ -606,10 +606,19 @@ __________________________*/
 
 ul#pontos {
 	border: 1px solid #e7e7e7;
+	clear: both;
+}
+
+ul#pontos li span {
+	font-family: Verdana;
 }
 
 a#expandir_todos {
-	margin-right: 50px;
+	float: right;
+}
+#retrair_todos {
+	margin-left: 50px;
+	float: right;
 }
 
 a#expandir span {
@@ -636,11 +645,13 @@ a#expandir span {
 
 .container_11 .grid_900 {width:95%;}
 
+.negrito {
+	font-weight: bold;
+}
+
 ul .sub-menu {
 	display: none;
 }
-
-
 
 /*Css da página paginacao.php*/
 .pgoff {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #FF0000; text-decoration: none}
