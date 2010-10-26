@@ -97,6 +97,7 @@
 												<span><span class="negrito">Nome do Monitor: </span>'.ucwords(mb_strtolower($nome,'utf-8')).' '.ucwords(mb_strtolower($sobrenome,'utf-8')).'</span><br>
 												<span><span class="negrito">Código do Ponto: </span>'.$id.'</span><br>
 												<span><span class="negrito">E-mail: </span>'.mb_strtolower($email,'utf-8').'</span><br>           
+												<span><span class="negrito">Município: </span>'.ucwords(mb_strtolower($municipio,'utf-8')).'</span><br>
 												<a href="#" id="expandir"><span>+</span></a><br>
 												<ul class="sub-menu">';
 													if ($logradouro!='')
@@ -118,10 +119,6 @@
 													if ($complemento!='')
 													{
 														echo '<li><span class="negrito">Complemento: </span>'.ucwords(mb_strtolower($complemento,'utf-8')).'</li>';
-													}
-													if ($municipio!='')
-													{
-														echo '<li><span class="negrito">Município: </span>'.ucwords(mb_strtolower($municipio,'utf-8')).'</li>';
 													}
 												echo '</ul>
 										</li>';
