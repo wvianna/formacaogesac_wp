@@ -234,7 +234,7 @@ margin-bottom:3em
 #content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
 #content ul { list-style: inside url(imgs/bullet.gif); line-height:2em; }
 #content ul.hl h3 a, #content ul.hl li a { color:#38464C; }
-#content ul.hl a:hover {text-decoration:none; color:#11719C;}
+#content ul.hl a:hover {text-decoration:none; color:#11719C; font-weight:bold; font-size:16px;}
 #content ul.hl {
 	border-bottom:1px dotted #1F9ED7;
 	padding-bottom:3px;
