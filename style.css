@@ -481,7 +481,7 @@ box-shadow: none;
 
 #myGallery { margin-bottom:2em; padding-bottom:100px}
 #myGallery .slideElement { background-position:center 0 !important;}
-#myGallery .slideInfoZone {background: #fff url("imgs/bg_body.gif") repeat-x !important; opacity:1 !important; position:absolute; height:75px !important;  padding:15px 0 0 15px !important;}
+#myGallery .slideInfoZone {background: #fff url("imgs/bg_body.gif") repeat-x !important; opacity:1 !important; position:absolute; height:90px !important;  padding:15px 0 0 15px !important;}
 #myGallery .slideInfoZone h2 { background:none !important; font-weight:normal !important; margin:0 0 .6em 0 !important;}
 #myGallery .slideInfoZone p { color:#38464C !important; font-size:inherit !important; margin:0 !important;}
 
