@@ -10,6 +10,7 @@
         </div>
         <?php endwhile; ?>
       <?php endif; ?>
+      <?php comments_template(); ?>
     </div>
     </div>
     <div id="right-column" class="grid_2">

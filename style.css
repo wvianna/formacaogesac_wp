@@ -231,10 +231,10 @@ margin-bottom:3em
 #content h2 { margin-bottom:1em;}
 #content h1 { margin-top:.5em; color: #0091D2; font-size:2em}
 #content h2 { font-size:1.4em !important; color:#0091D2 !important; margin-bottom:.6em !important; }
-#content h3 { font-size: 1.1em; color:#38464C; margin-bottom:.6em; }
+#content h3 { font-size: 1.3em; color:#38464C; margin-bottom:.6em; font-weight:bold; }
 #content ul { list-style: inside url(imgs/bullet.gif); line-height:2em; }
 #content ul.hl h3 a, #content ul.hl li a { color:#38464C; }
-#content ul.hl a:hover {text-decoration:none; color:#11719C;}
+#content ul.hl a:hover {text-decoration:none; color:#11719C; }
 #content ul.hl {
 	border-bottom:1px dotted #1F9ED7;
 	padding-bottom:3px;
@@ -481,7 +481,7 @@ box-shadow: none;
 
 #myGallery { margin-bottom:2em; padding-bottom:100px}
 #myGallery .slideElement { background-position:center 0 !important;}
-#myGallery .slideInfoZone {background: #fff url("imgs/bg_body.gif") repeat-x !important; opacity:1 !important; position:absolute; height:75px !important;  padding:15px 0 0 15px !important;}
+#myGallery .slideInfoZone {background: #fff url("imgs/bg_body.gif") repeat-x !important; opacity:1 !important; position:absolute; height:90px !important;  padding:15px 0 0 15px !important;}
 #myGallery .slideInfoZone h2 { background:none !important; font-weight:normal !important; margin:0 0 .6em 0 !important;}
 #myGallery .slideInfoZone p { color:#38464C !important; font-size:inherit !important; margin:0 !important;}
 
@@ -604,29 +604,31 @@ __________________________*/
 	overflow:auto;
 }
 
-#tabelaresultado {
-	border:1px solid #e7e7e7;
+ul#pontos {
+	border: 1px solid #e7e7e7;
+	clear: both;
 }
 
-#tabelaresultado th {
-	color:white;
-	background-color:#1f9ed7;	
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	padding:3px;
-	vertical-align:top;
+ul#pontos li span {
+	font-family: Verdana;
+}
+
+a#expandir_todos {
+	float: right;
+}
+#retrair_todos {
+	margin-left: 50px;
+	float: right;
+}
+
+a#expandir span {
+	font-size: 30px;
 }
 
 #linha_com_cor {
 	background-color:#c7e7f5;	
 	padding:3px;
 	vertical-align:top;
-}
-
-#linha_com_cor td {
-	border-left:1px solid #e7e7e7;
-	border-right:1px solid #e7e7e7;
-	font-size:10px;
 }
 
 #linha_sem_cor {
@@ -642,3 +644,16 @@ __________________________*/
 }
 
 .container_11 .grid_900 {width:95%;}
+
+.negrito {
+	font-weight: bold;
+}
+
+ul .sub-menu {
+	display: none;
+}
+
+/*Css da página paginacao.php*/
+.pgoff {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #FF0000; text-decoration: none}
+a.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #003366; text-decoration: none}
+a:hover.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #0066cc; text-decoration:underline}
