@@ -230,8 +230,8 @@ margin-bottom:3em
 #content h1,
 #content h2 { margin-bottom:1em;}
 #content h1 { margin-top:.5em; color: #0091D2; font-size:2em}
-#content h2 { font-size:1.4em !important; color:#0091D2 !important; margin-bottom:.6em !important; }
-#content h3 { font-size: 1.3em; color:#38464C; margin-bottom:.6em; font-weight:bold; }
+#content h2 { color:#0091D2 !important; margin-bottom:.6em !important; }
+#content h3 { font-size: 1.2em; color:#38464C; margin-bottom:.6em; font-weight:bold; }
 #content ul { list-style: inside url(imgs/bullet.gif); line-height:2em; }
 #content ul.hl h3 a, #content ul.hl li a { color:#38464C; }
 #content ul.hl a:hover {text-decoration:none; color:#11719C; }
@@ -245,7 +245,7 @@ margin-bottom:3em
 #content ul.hl li {clear:both; border-top: 1px dotted #1F9ED7; padding:.5em 0}
 #content ul.hl p {margin-bottom:.5em;}
 #content ul.hl .date {display:block; margin-bottom:.6em; margin-top:-1em;}
-#content ul.hl .time-since {display:block; margin-bottom:.6em;}
+#content ul.hl .time-since { margin-bottom:.6em;}
 .date, .time-since, .view, .item-button {color: #999; font-size:.8em;}
 .more {
 	display:block;
@@ -327,7 +327,7 @@ li#right_servicospublicos, li#menu-item-113 {background-position:0 -257px;}
 li#right_kitsos, li#menu-item-104 {background-position:0 -302px;}
 li#right_redmine, li#menu-item-114 {background-position:0 -348px;}
 li#right_twitter, li#menu-item-115 {background-position:0 -392px;}
-li#right_orkut {background-position:0 -436px;}
+li#right_orkut, li#menu-item-325 {background-position:0 -436px;}
 li#right_youtube {background-position:0 -485px;}
 
 #right-column ul.blogroll li {margin-bottom:2em;}
@@ -657,3 +657,13 @@ ul .sub-menu {
 .pgoff {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #FF0000; text-decoration: none}
 a.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #003366; text-decoration: none}
 a:hover.pg {font-family: Verdana, Arial, Helvetica; font-size: 11px; color: #0066cc; text-decoration:underline}
+
+
+
+/* Correções 1/12/10 */
+
+.activity-header {font-size:.9em;}
+.activity-header h3 { font-weight:normal}
+.activity-header h3 a {font-weight:bold}
+
+
