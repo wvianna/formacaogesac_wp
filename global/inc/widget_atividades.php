@@ -42,26 +42,28 @@ class widget_activity extends WP_Widget
 					<?php do_action( 'bp_before_activity_entry' ) ?>
 
 					<li class="<?php bp_activity_css_class() ?>" id="activity-<?php bp_activity_id() ?>">
-							<?php 
-								$diretorio='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id();
-								$ponteiro=opendir($diretorio);
-								while ($nome_itens=readdir($ponteiro)):
-									if (preg_match('/bpfull/i', $nome_itens)):
-										$img=$nome_itens;
-									endif;
-								endwhile;	
-								$imagem='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id().'/'.$img;
-							?>
-							<?php if(file_exists($imagem)): ?>
-								<a class="alignleft" href="<?php bp_activity_user_link() ?>">
-									<img width="50" height="50" class="<?php echo 'avatar user-'.bp_get_activity_user_id().'-avatar'?>" alt="Avatar" src= "<?php echo $imagem; ?>">
-								</a>
-							<?php else:?>
-								<a class="alignleft" href="<?php bp_activity_user_link() ?>">
-									<?php bp_activity_avatar( 'type=full&width=50&height=50' ) ?>
-								</a>
 
-							<?php endif;?>
+							<?php 	$diretorio='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id();	
+
+								if(file_exists($diretorio)): 
+									$ponteiro=opendir($diretorio);
+									while ($nome_itens=readdir($ponteiro)):
+										if (preg_match('/bpfull/i', $nome_itens)):
+											$img=$nome_itens;
+										endif;
+									endwhile;	
+									$imagem='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id().'/'.$img;?>
+
+									<a class="alignleft" href="<?php bp_activity_user_link() ?>">
+										<img width="50" height="50" class="<?php echo 'avatar user-'.bp_get_activity_user_id().'-avatar'?>" alt="Avatar" src= "<?php echo $imagem; ?>">
+									</a>
+
+								<?php else:?>
+									<a class="alignleft" href="<?php bp_activity_user_link() ?>">
+										<?php bp_activity_avatar( 'type=full&width=50&height=50' ) ?>
+									</a>
+
+								<?php endif;?>
 							
 
 						<div class="activity-content">
