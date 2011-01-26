@@ -51,12 +51,17 @@ class widget_activity extends WP_Widget
 										if (preg_match('/bpfull/i', $nome_itens)):
 											$img=$nome_itens;
 										endif;
-									endwhile;	
-									$imagem='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id().'/'.$img;?>
-
-									<a class="alignleft" href="<?php bp_activity_user_link() ?>">
-										<img width="50" height="50" class="<?php echo 'avatar user-'.bp_get_activity_user_id().'-avatar'?>" alt="Avatar" src= "<?php echo $imagem; ?>">
-									</a>
+									endwhile;
+									$imagem='../wp/wp-content/uploads/avatars/'.bp_get_activity_user_id().'/'.$img;
+									if(file_exists($imagem)):?>	
+										<a class="alignleft" href="<?php bp_activity_user_link() ?>">
+											<img width="50" height="50" class="<?php echo 'avatar user-'.bp_get_activity_user_id().'-avatar'?>" alt="Avatar" src= "<?php echo $imagem; ?>">
+										</a>
+									<?php else:?>
+										<a class="alignleft" href="<?php bp_activity_user_link() ?>">
+											<?php bp_activity_avatar( 'type=full&width=50&height=50' ) ?>
+										</a>
+									<?php endif;?>
 
 								<?php else:?>
 									<a class="alignleft" href="<?php bp_activity_user_link() ?>">
@@ -95,7 +100,7 @@ class widget_activity extends WP_Widget
 					</ul>
 				<?php endif; ?>
 			      <!--  <a  class="more" href="<?php echo get_bloginfo('url').'/'.BP_ACTIVITY_SLUG; ?>">Leia Mais &raquo;</a> -->
-                              <a  class="more" href="http://gesac.ifce.edu.br/wp/activity">Leia Mais &raquo;</a>
+                              <a  class="more" href="http://redegesac.net/wp/activity">Mais</a>
 
 
 
