@@ -8,8 +8,7 @@
         <div class="postContent">
           <?php 
 		$content = stripslashes(get_the_content());
-		$content = apply_filters('the_content', $content);
-		$content = str_replace(']]>', ']]&gt;', $content);
+		$content = apply_filters('the_content', $content);		
 		echo $content;
  	  ?>
         </div>
