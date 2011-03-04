@@ -6,7 +6,7 @@
       <?php while( have_posts() ) : the_post() ?>
         <h1><?php the_title(); ?></h1>  
         <div class="postContent">
-          <?php echo stripslashes(get_the_content()); ?>
+          <?php the_content(); ?>
         </div>
         <?php endwhile; ?>
       <?php endif; ?>
