@@ -6,7 +6,12 @@
       <?php while( have_posts() ) : the_post() ?>
         <h1><?php the_title(); ?></h1>  
         <div class="postContent">
-          <?php the_content(); ?>
+          <?php 
+		$content = stripslashes(get_the_content());
+		$content = apply_filters('the_content', $content);
+		$content = str_replace(']]>', ']]&gt;', $content);
+		echo $content;
+ 	  ?>
         </div>
         <?php endwhile; ?>
       <?php endif; ?>
