@@ -55,16 +55,18 @@
 						var type = markers[i].getAttribute("type");
 						var point = new GLatLng(parseFloat(markers[i].getAttribute("lat")),
 						                        parseFloat(markers[i].getAttribute("lng")));
-						var marker = createMarker(point, name, address, type);
+						var monitor = markers[i].getAttribute("monitor");
+						var email = markers[i].getAttribute("email");
+						var marker = createMarker(point, name, address, monitor, email, type);
 						map.addOverlay(marker);
 					}
 				});
 			}
 		}
 
-		function createMarker(point, name, address, type) {
+		function createMarker(point, name, address, monitor, email, type) {
 			var marker = new GMarker(point, iconBlue);
-			var html = "<b>" + name + "</b> <br/>" + address;
+			var html = "<b>" + name + "</b> <br/> ENDEREÇO: " + address + "<br/> NOME DO MONITOR: " + monitor + "<br/> E-MAIL: " + email;
 			GEvent.addListener(marker, 'click', function() {
 				marker.openInfoWindowHtml(html);
 			});

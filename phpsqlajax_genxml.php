@@ -50,8 +50,10 @@ while ($row = @mysql_fetch_assoc($result)){
 	{
 		// ADD TO XML DOCUMENT NODE
 		echo '<marker ';
-		echo 'name="' . parseToXML($row['estabelecimento']) . '" ';
-		echo 'address="' . parseToXML($row['logradouro'].', No '.$row['numero'].', '.$row['complemento'].', '.$row['municipio'].', '.$row['uf']) . '" ';
+		echo 'name="' . parseToXML('PONTO GESAC '.$row['gesac'].'-' .$row['estabelecimento']) . '" ';
+		echo 'address="' . parseToXML($row['logradouro'].', No '.$row['numero'].', '.$row['complemento'].', '.$row['municipio'].', '.$row['uf'].', '.$row['cep']) . '" ';
+		echo 'monitor="' . parseToXML($row['nome'].' '. $row['sobrenome']) . '" ';
+		echo 'email="' . parseToXML($row['email']) . '" ';
 		echo 'lat="' . $row['latitude'] . '" ';
 		echo 'lng="' . $row['longitude'] . '" ';
 		//echo 'type="' . $row['type'] . '" ';
