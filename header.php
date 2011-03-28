@@ -57,16 +57,17 @@
 						                        parseFloat(markers[i].getAttribute("lng")));
 						var monitor = markers[i].getAttribute("monitor");
 						var email = markers[i].getAttribute("email");
-						var marker = createMarker(point, name, address, monitor, email, type);
+						var telefone = markers[i].getAttribute("telefone");
+						var marker = createMarker(point, name, address, monitor, email, telefone, type);
 						map.addOverlay(marker);
 					}
 				});
 			}
 		}
 
-		function createMarker(point, name, address, monitor, email, type) {
+		function createMarker(point, name, address, monitor, email, telefone, type) {
 			var marker = new GMarker(point, iconBlue);
-			var html = "<b>" + name + "</b> <br/> ENDEREÇO: " + address + "<br/> NOME DO MONITOR: " + monitor + "<br/> E-MAIL: " + email;
+			var html = "<b>" + name + "</b> <br/> ENDEREÇO DO PONTO: " + address + "<br/> TELEFONE DO PONTO: " + telefone + "<br/>  E-MAIL DO PONTO: " + email + "<br/> NOME DO MONITOR: " + monitor;
 			GEvent.addListener(marker, 'click', function() {
 				marker.openInfoWindowHtml(html);
 			});

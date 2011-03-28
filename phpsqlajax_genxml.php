@@ -56,6 +56,7 @@ while ($row = @mysql_fetch_assoc($result)){
 		echo 'email="' . parseToXML($row['email']) . '" ';
 		echo 'lat="' . $row['latitude'] . '" ';
 		echo 'lng="' . $row['longitude'] . '" ';
+		echo 'telefone="' . $row['telefone'] . '" ';
 		//echo 'type="' . $row['type'] . '" ';
 		echo '/>';
 	}

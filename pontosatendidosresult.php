@@ -85,6 +85,7 @@
 						$longitude = $reg["longitude"];
 						$nome = $reg["nome"];
 						$sobrenome = $reg["sobrenome"];
+						$telefone = $reg["telefone"];
 						if (($i % 2) == 0)
 						{
 							echo '<li class="parent" id="linha_com_cor">';
@@ -119,6 +120,10 @@
 													if ($complemento!='')
 													{
 														echo '<li><span class="negrito">Complemento: </span>'.ucwords(mb_strtolower($complemento,'utf-8')).'</li>';
+													}
+													if ($telefone!='')
+													{
+														echo '<li><span class="negrito">Telefone: </span>'.ucwords(mb_strtolower($telefone,'utf-8')).'</li>';
 													}
 												echo '</ul>
 										</li>';
